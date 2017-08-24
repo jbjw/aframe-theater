@@ -1,8 +1,8 @@
 const fs = require( 'fs' )
-const path = require( 'path' )
-ts
-const CAM_PREFIX = "360_"
-const PHONE_PREFIX = "SAM_101_"
+const path = require( 'path' )ww
+
+const CAM_PREFIX = '360_'
+const PHONE_PREFIX = 'SAM_101_'
 
 const PATH = path.resolve( 'C:/Users/jbjw/gdrive/jax\ gear360' )
 // const PATH = 'C:/Users/jbjw/gdrive/jax\ gear360'
