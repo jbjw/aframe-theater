@@ -1,4 +1,4 @@
-# A-Frame Theater Demo
+# A-Frame Theater
 
 Demo at https://jbjw.github.io/aframe-theater/
 
