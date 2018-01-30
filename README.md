@@ -1,6 +1,8 @@
 # A-Frame Theater Demo
 
-### Instructions
+Demo at https://jbjw.github.io/aframe-theater/
+
+### Instructions for running locally
 In the cloned repo, run:
 ```
 npm install
