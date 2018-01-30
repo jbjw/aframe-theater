@@ -1,9 +1,9 @@
 {
   "name": "aframe-theater",
   "version": "1.0.0",
-  "description": "",
-  "main": "ye.js",
+  "description": "a player for 360 videos, rich stuff like subtitles, blah",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

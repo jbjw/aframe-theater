@@ -13,22 +13,34 @@ const qsa = document.querySelectorAll.bind( document )
 //
 // .currentTime get and set
 
+var vid = qs( "#test" )
+// vid.play()
+
 var vs = qs( "#videosphere" )
 console.log( vs )
-vs.pause()
+// vs.pause()
+// console.log( vs.srcObject )
+// console.log( "ween" + typeof vs )
 setInterval( function () {
-	vs.pause()
+	// vs.pause()
 }, 1000 )
 
-document.body.addEventListener( "drop", function () {
-  var dt = event.dataTransfer;
-  var files = dt.files;
+document.body.addEventListener( "dragover", function ( e ) {
+	e.preventDefault()
+} )
 
-  var count = files.length;
-  output("File Count: " + count + "\n");
+document.body.addEventListener( "drop", function ( e ) {
+	e.preventDefault()
+	var dt = e.dataTransfer;
+	var files = dt.files;
+	var url = URL.createObjectURL( files[ 0 ] )
+	// console.log( files[ 0 ] )
+	console.log( url )
+	vid.src = url
+	// console.log( typeof files[ 0 ] )
+	// file.name, file.size
+	// vid.srcObject = files[ 0 ]
 
-  for (var i = 0; i < files.length; i++) {
-    output(" File " + i + ":\n(" + (typeof files[i]) + ") : <" + files[i] + " > " +
-           files[i].name + " " + files[i].size + "\n");
-  }
+	var count = files.length;
+	console.log( "file count " + count )
 } )
