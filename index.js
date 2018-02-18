@@ -33,14 +33,8 @@ document.body.addEventListener( "drop", function ( e ) {
 	e.preventDefault()
 	var dt = e.dataTransfer;
 	var files = dt.files;
+	// file.name, file.size
 	var url = URL.createObjectURL( files[ 0 ] )
 	// console.log( files[ 0 ] )
-	console.log( url )
 	vid.src = url
-	// console.log( typeof files[ 0 ] )
-	// file.name, file.size
-	// vid.srcObject = files[ 0 ]
-
-	var count = files.length;
-	console.log( "file count " + count )
 } )

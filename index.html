@@ -7,7 +7,12 @@
 			<a-assets>
 				<video id="test" src="test.mp4"></video>
 				<!-- <video id="video_1" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"></video> -->
+				<a-asset-item id="goggles-obj" src="models/stereoscope/obj-triangulated/model-triangulated.obj"></a-asset-item>
+				<a-asset-item id="goggles-mtl" src="models/stereoscope/obj-triangulated/materials.mtl"></a-asset-item>
 			</a-assets>
+
+			<a-entity obj-model="obj: #goggles-obj; mtl: #goggles-mtl"></a-entity>
+
 			<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
 			<a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
 			<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
