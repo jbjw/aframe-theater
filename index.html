@@ -1,6 +1,9 @@
 <html>
 	<head>
 		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+		<script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+		<script src="https://rawgit.com/caseyyee/aframe-ui-widgets/master/dist/ui-widgets.min.js"></script>
+		<!-- https://github.com/oscarmarinmiro/aframe-video-controls -->
 	</head>
 	<body>
 		<a-scene>
@@ -10,6 +13,9 @@
 				<a-asset-item id="goggles-obj" src="models/stereoscope/obj-triangulated/model-triangulated.obj"></a-asset-item>
 				<a-asset-item id="goggles-mtl" src="models/stereoscope/obj-triangulated/materials.mtl"></a-asset-item>
 			</a-assets>
+
+			<!-- <a-entity environment></a-entity> -->
+			<!-- https://www.npmjs.com/package/aframe-environment-component -->
 
 			<a-entity obj-model="obj: #goggles-obj; mtl: #goggles-mtl"></a-entity>
 

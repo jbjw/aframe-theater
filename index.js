@@ -35,6 +35,5 @@ document.body.addEventListener( "drop", function ( e ) {
 	var files = dt.files;
 	// file.name, file.size
 	var url = URL.createObjectURL( files[ 0 ] )
-	// console.log( files[ 0 ] )
 	vid.src = url
 } )
