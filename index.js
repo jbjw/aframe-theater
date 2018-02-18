@@ -1,3 +1,6 @@
+//
+
+"use strict"
 
 const qs = document.querySelector.bind( document )
 const qsa = document.querySelectorAll.bind( document )
@@ -14,7 +17,7 @@ const qsa = document.querySelectorAll.bind( document )
 // .currentTime get and set
 
 var vid = qs( "#test" )
-// vid.play()
+vid.play()
 
 var vs = qs( "#videosphere" )
 console.log( vs )
@@ -31,8 +34,8 @@ document.body.addEventListener( "dragover", function ( e ) {
 
 document.body.addEventListener( "drop", function ( e ) {
 	e.preventDefault()
-	var dt = e.dataTransfer;
-	var files = dt.files;
+	var dt = e.dataTransfer
+	var files = dt.files
 	// file.name, file.size
 	var url = URL.createObjectURL( files[ 0 ] )
 	vid.src = url
