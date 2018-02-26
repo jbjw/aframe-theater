@@ -22,8 +22,9 @@ document.body.addEventListener( "dragover", function ( e ) {
 
 document.body.addEventListener( "drop", function ( e ) {
 	e.preventDefault()
-	var dt = e.dataTransfer;
-	var files = dt.files;
+	var dt = e.dataTransfer
+	var files = dt.files
+	// file.name, file.size
 	var url = URL.createObjectURL( files[ 0 ] )
 	vid.src = url
 

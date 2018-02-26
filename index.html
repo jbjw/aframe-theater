@@ -1,14 +1,14 @@
 <html>
 	<head>
 		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+		<!-- <script src="aframe-video-controls.js"></script> -->
 	</head>
 	<body>
 		<a-scene>
 			<a-assets>
-				<!-- <video id="video-default" src="video_default.mp4"></video> -->
 				<video id="video-default" src="https://ucarecdn.com/51ac24de-3ffd-4ce3-bef3-a8e9ddf68313/truckeeshort1080.mkv"></video>
 			</a-assets>
-			<a-videosphere id="videosphere" src="#test" rotation="0 0 0"></a-videosphere>
+			<a-videosphere id="videosphere" src="#video-default" rotation="0 0 0"></a-videosphere>
 		</a-scene>
 		<script src="index.js"></script>
 	</body>
