@@ -1,4 +1,17 @@
 
+
+HTMLMediaElement
+// video element info
+// .play() .pause() .loop (bool)
+// .volume (0-1) .muted (bool)
+// .duration .currentTime .fastSeek()
+
+src url vs srcObject straight from file
+
+usin gasset vs the aframe element itself, some functions like play pause etc are available
+
+
+
 <!-- <video id="video-default" src="video_default.mp4"></video> -->
 <video id="video-default" src="https://ucarecdn.com/51ac24de-3ffd-4ce3-bef3-a8e9ddf68313/truckeeshort1080.mkv"></video>
 
