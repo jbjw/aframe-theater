@@ -8,6 +8,7 @@ const qsa = document.querySelectorAll.bind( document )
 // document.querySelector( "#video" )
 
 
+
 // videoEl
 // .loop bool
 // .muted bool
@@ -17,16 +18,8 @@ const qsa = document.querySelectorAll.bind( document )
 // .currentTime get and set
 
 var vid = qs( "#test" )
-vid.play()
 
 var vs = qs( "#videosphere" )
-console.log( vs )
-// vs.pause()
-// console.log( vs.srcObject )
-// console.log( "ween" + typeof vs )
-setInterval( function () {
-	// vs.pause()
-}, 1000 )
 
 document.body.addEventListener( "dragover", function ( e ) {
 	e.preventDefault()
