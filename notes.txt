@@ -1,0 +1,42 @@
+
+
+HTMLMediaElement
+// video element info
+// .play() .pause() .loop (bool)
+// .volume (0-1) .muted (bool)
+// .duration .currentTime .fastSeek()
+
+src url vs srcObject straight from file
+
+usin gasset vs the aframe element itself, some functions like play pause etc are available
+
+
+
+<!-- <video id="video-default" src="video_default.mp4"></video> -->
+<video id="video-default" src="https://ucarecdn.com/51ac24de-3ffd-4ce3-bef3-a8e9ddf68313/truckeeshort1080.mkv"></video>
+
+
+
+<!-- <a-videosphere id="videosphere" src="test.mp4"></a-videosphere> -->
+<a-videosphere id="videosphere" src="#video-default" rotation="0 0 0"></a-videosphere>
+
+
+default non loaded video environment or sky?
+<a-sky color="#ECECEC"></a-sky>
+<!-- <a-entity environment></a-entity> -->
+<!-- https://www.npmjs.com/package/aframe-environment-component -->
+<script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+viewer objects, stereoscope, etc
+
+<a-asset-item id="goggles-obj" src="models/stereoscope/obj-triangulated/model-triangulated.obj"></a-asset-item>
+<a-asset-item id="goggles-mtl" src="models/stereoscope/obj-triangulated/materials.mtl"></a-asset-item>
+
+<a-entity obj-model="obj: #goggles-obj; mtl: #goggles-mtl"></a-entity>
+
+UI libs
+https://github.com/etiennepinchon/aframe-material
+
+<script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script>
+
+<script src="https://rawgit.com/caseyyee/aframe-ui-widgets/master/dist/ui-widgets.min.js"></script>

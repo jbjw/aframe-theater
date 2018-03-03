@@ -4,22 +4,10 @@
 
 const qs = document.querySelector.bind( document )
 const qsa = document.querySelectorAll.bind( document )
-// document.getElementsByTagName('video')[0].volume = 0.5;
-// document.querySelector( "#video" )
 
+var videoAsset = qs( "#video-default" )
 
-
-// videoEl
-// .loop bool
-// .muted bool
-// .play()
-// .pause()
-//
-// .currentTime get and set
-
-var vid = qs( "#test" )
-
-var vs = qs( "#videosphere" )
+var videoSphere = qs( "#videosphere" )
 
 document.body.addEventListener( "dragover", function ( e ) {
 	e.preventDefault()
@@ -32,4 +20,10 @@ document.body.addEventListener( "drop", function ( e ) {
 	// file.name, file.size
 	var url = URL.createObjectURL( files[ 0 ] )
 	vid.src = url
+
+	// misc
+	// files.length;
+	// typeof files[ 0 ]
+	// file.name, file.size
+	// vid.srcObject = files[ 0 ]
 } )
